@@ -10,7 +10,7 @@ This project illustrates how I installed Azure Firewall to enhance network secur
 
 The diagram above illustrates the steps involved in completing this project. The initial step was to deploy virtual machines using a template via the Azure portal. These VMs play vital roles in testing and validating firewall rules, creating isolated network segments, enabling remote administration, hosting web applications, and monitoring network traffic. Deploying these VMs ensures that the Azure Firewall is properly configured and effectively safeguarding the network.
 
-[![Screenshot-2024-07-20-153249.png](https://i.postimg.cc/L50mSDqp/Screenshot-2024-07-20-153249.png)](https://postimg.cc/bSb7HQHC
+[![Screenshot-2024-07-20-153249.png](https://i.postimg.cc/L50mSDqp/Screenshot-2024-07-20-153249.png)](https://postimg.cc/bSb7HQHC)
 
 [![Screenshot-2024-07-20-153715.png](https://i.postimg.cc/KcsbR9zX/Screenshot-2024-07-20-153715.png)](https://postimg.cc/dDdpfjrn)
 
@@ -20,7 +20,11 @@ I deployed the Azure Firewall within the virtual network to ensure that only aut
 
 [![Screenshot-2024-07-20-170708.png](https://i.postimg.cc/qvJWwygc/Screenshot-2024-07-20-170708.png)](https://postimg.cc/2VtH8qQ3)
 
-I set up a routing table with a default route for the Workload-SN subnet, directing outbound traffic through the firewall. A routing table is an essential network component that determines the path data packets follow to reach their destination
+Below are all resources created in resource group named Victor_Resource group
+
+[![Screenshot-2024-07-20-223902.png](https://i.postimg.cc/T3DVFY1k/Screenshot-2024-07-20-223902.png)](https://postimg.cc/5XfQFJwv)
+
+Next, I set up a routing table with a default route for the Workload-SN subnet, directing outbound traffic through the firewall. A routing table is an essential network component that determines the path data packets follow to reach their destination
 
 [![Screenshot-2024-07-20-172055.png](https://i.postimg.cc/8zbNPTf4/Screenshot-2024-07-20-172055.png)](https://postimg.cc/bZdKmcTS)
 
