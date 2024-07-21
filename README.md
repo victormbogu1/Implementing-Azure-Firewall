@@ -69,10 +69,15 @@ From the Remote Desktop session to Srv-Work, I opened Internet Explorer and visi
 
 I tested by attempting to access `http://www.microsoft.com/`, and the response indicated an HTTP request from `10.0.2.4:xxxxx` to `microsoft.com:80` was denied with the message: "No rule matched. Proceeding with default action." This result is anticipated, as the firewall is set to block access to this site.
 
-[![Screenshot-2024-07-20-181520.png](https://i.postimg.cc/dtkgxw93/Screenshot-2024-07-20-181520.png)](https://postimg.cc/56JPHcTW
+[![Screenshot-2024-07-20-181520.png](https://i.postimg.cc/dtkgxw93/Screenshot-2024-07-20-181520.png)](https://postimg.cc/56JPHcTW)
 
 # Explanation of Specific Components
-Work Server (Srv-Work): This server is used to simulate a workload within the Workload-SN subnet. It is configured to route its traffic through the Azure Firewall for security purposes.
-Jump Server (Srv-Jump): This server is used as a management jump box, allowing administrators to connect to and manage other VMs in the network securely.
-TEST-FW-PIP: This is the public IP address assigned to the Azure Firewall, allowing it to interact with external networks and provide ingress/egress filtering for the VNet.
+Work Server (Srv-Work): This server is used to simulate a workload within the Workload-SN subnet. It is configured to route its traffic through the Azure Firewall for security purposes
+
+Jump Server (Srv-Jump): This server is used as a management jump box, allowing administrators to connect to and manage other VMs in the network securely
+
+TEST-FW-PIP: This is the public IP address assigned to the Azure Firewall, allowing it to interact with external networks and provide ingress/egress filtering for the VNet
+
+DNS Servers Configuration: Ensures VMs can resolve domain names to IP addresses for connectivity
+
 The jump server facilitates secure administration, while the work server simulates internal traffic managed by the firewall
