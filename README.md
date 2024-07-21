@@ -76,6 +76,8 @@ Work Server (Srv-Work): This server is used to simulate a workload within the Wo
 
 Jump Server (Srv-Jump): This server is used as a management jump box, allowing administrators to connect to and manage other VMs in the network securely
 
+Test-FW-VN: A secure virtual network in Azure that connects and isolates VMs
+
 TEST-FW-PIP: This is the public IP address assigned to the Azure Firewall, allowing it to interact with external networks and provide ingress/egress filtering for the VNet
 
 DNS Servers Configuration: Ensures VMs can resolve domain names to IP addresses for connectivity
